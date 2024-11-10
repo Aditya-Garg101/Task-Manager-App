@@ -43,7 +43,7 @@ Create a .env file in the server directory with the following variables:
 
 env
 Copy code
-MONGO_URI = mongodb+srv://adityagarg646:Qpoc9jBMtFz53AlK@cluster1.ro01vgx.mongodb.net/portfolio
+MONGO_URI = connect your localhost mongo uri
 JWT_SECRET = adityagarg6463
 Run the app:
 
