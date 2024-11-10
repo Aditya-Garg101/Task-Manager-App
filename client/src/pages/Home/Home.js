@@ -58,7 +58,7 @@ function TaskList() {
     <div className="tab-pane">
       <h2>List of tasks created by You</h2>
       <div className="grid">
-        {tasks?tasks.map((task) => {
+        {!tasks?tasks.map((task) => {
           return <TaskCard task={task} />;
         }):"Create a Task to Display"}
       </div>
