@@ -1,0 +1,87 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f6f9;
+  }
+  
+  /* Card Container */
+  .task-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-10px); /* Elevate the card on hover */
+  }
+  
+  /* Header Section */
+  .task-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .task-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .task-status {
+    padding: 6px 12px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Task Details */
+  .task-details {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .task-id, .task-description, .task-assigned, .task-timestamps div {
+    margin-bottom: 8px;
+  }
+  
+  .task-assigned a {
+    color: #2196f3;
+    text-decoration: none;
+  }
+  
+  .task-assigned a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Timestamp section */
+  .task-timestamps div {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 600px) {
+    .task-card {
+      width: 90%;
+    }
+  }
+  
+  
