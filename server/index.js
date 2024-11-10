@@ -15,7 +15,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server,{
   cors: {
-    origin: "https://task-manager-englighten-client.vercel.app", 
+    origin: "https://task-manager-app-dusky-mu.vercel.app", 
     methods: ["GET", "POST","PUT","DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
@@ -33,7 +33,7 @@ app.use((req,res,next)=>{
   next()
 })
 const corsOptions = {
-  origin:  "https://task-manager-englighten-client.vercel.app",  
+  origin:  "https://task-manager-app-dusky-mu.vercel.app",  
   methods: ["GET", "POST","PUT", "DELETE"],  
   allowedHeaders: ["Content-Type", "authorization"], 
   credentials: true, 
